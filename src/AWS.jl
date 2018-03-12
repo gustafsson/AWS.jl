@@ -193,7 +193,7 @@ function get_instance_credentials()
         #    return nothing
         #end
 
-        url = "http://169.254.169.254/2014-11-05/meta-data/iam/security-credentials/"
+        url = "http://169.254.169.254/latest/meta-data/iam/security-credentials/"
         resp = Requests.get(url)
         if resp.status != 200
             return nothing
